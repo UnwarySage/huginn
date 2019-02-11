@@ -1,19 +1,18 @@
-(ns tiny-gp.population)
+(ns tiny-gp.population
+  (:require [tiny-gp.utility :as util]))
 
 ;;given an initial population specification,
 ;;will return a list of individuals generated to meet that spec
 
-(defn random-from [inp-coll]
-  (nth (into [] inp-coll) (rand-int (count inp-coll))))
 
 (defn grow-method [depth ops terminals]
   (if (or (= 0 depth)
           (< (rand)
              (/ (count terminals)
                 (+ (count terminals) (count ops)))))
-      (random-from terminals)
+      (util/random-from terminals)
       (list
-        (random-from ops)
+        (util/random-from ops)
         (grow-method (dec depth) ops terminals)
         (grow-method (dec depth) ops terminals))))
 
