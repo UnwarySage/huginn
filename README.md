@@ -1,4 +1,4 @@
-# tiny-gp
+# huginn
 
 A Clojure library designed to ... well, that part is up to you.
 

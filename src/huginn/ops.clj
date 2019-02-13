@@ -1,4 +1,4 @@
-(ns tiny-gp.ops)
+(ns huginn.ops)
 
 ;;this namespace implements the operations and operation sets that we will evolve over.
 

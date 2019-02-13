@@ -1,6 +1,6 @@
-(ns tiny-gp.population-test
+(ns huginn.population-test
   (:require [expectations :refer :all]
-            [tiny-gp.population :refer :all]))
+            [huginn.population :refer :all]))
 
 
 ;;TODO: figure out how to avoid tests having any chance of failling due to random chance.
@@ -20,7 +20,7 @@
 
 ;;now we test to see if if can generate a bunch of nodes.
 ;;make sure there are a vast variety of ops, so as to weigh the odds in favor of generating a complex function.
-(expect true (#(< 3 (count (flatten %))) (grow-method 5 (range 50) [4 5 6])))
+(expect true (#(< 3 (count (flatten %))) (grow-method 5 (range 500) [4 5 6])))
 
 ;;test generate-individual
 (expect true (#(or (list? %)

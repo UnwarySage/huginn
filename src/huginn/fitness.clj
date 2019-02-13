@@ -1,4 +1,4 @@
-(ns tiny-gp.fitness)
+(ns huginn.fitness)
 
 ;;These functions take evalled populations, and the configuration map.
 ;;They return evalled populations

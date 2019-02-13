@@ -1,4 +1,4 @@
-(ns tiny-gp.parse)
+(ns huginn.parse)
 
 ;;given a context and a indvidual,
 ;;these functions will return a clojure function.

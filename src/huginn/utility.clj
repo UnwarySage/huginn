@@ -1,4 +1,4 @@
-(ns tiny-gp.utility)
+(ns huginn.utility)
 
 
 (defn random-from

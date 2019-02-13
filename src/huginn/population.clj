@@ -1,5 +1,5 @@
-(ns tiny-gp.population
-  (:require [tiny-gp.utility :as util]))
+(ns huginn.population
+  (:require [huginn.utility :as util]))
 
 ;;given an initial population specification,
 ;;will return a list of individuals generated to meet that spec

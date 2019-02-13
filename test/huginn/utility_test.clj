@@ -1,6 +1,6 @@
-(ns tiny-gp.utility-test
+(ns huginn.utility-test
   (:require [expectations :refer :all]
-            [tiny-gp.utility :refer :all]))
+            [huginn.utility :refer :all]))
 
 ;;test random-from
 (expect #(contains? #{1 2 3} %) (random-from #{1 2 3}))
